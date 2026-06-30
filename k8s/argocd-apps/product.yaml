@@ -19,9 +19,6 @@ spec:
     # Đường dẫn đến Helm chart của service product
     path: k8s/charts/product
     # Cấu hình Helm
-    helm:
-      # Tự động build dependency (helm dependency build) trước khi deploy
-      buildDependencies: true
   destination:
     # Cluster mặc định (chính là cluster đang chạy ArgoCD)
     server: https://kubernetes.default.svc
