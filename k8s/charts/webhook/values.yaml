@@ -1,6 +1,6 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-webhook
+    repository: thaithienphu/webhook
     tag: latest
 
   nameOverride: webhook
