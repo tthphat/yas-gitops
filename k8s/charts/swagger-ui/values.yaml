@@ -10,7 +10,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v4.16.0"
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: dh-registry-secret
 nameOverride: ""
 fullnameOverride: ""
 
