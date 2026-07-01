@@ -8,17 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/tthphat/yas-gitops.git' # Repo Git chứa code hạ tầng của bạn
     targetRevision: main           # Branch chạy chính
-    path: k8s/charts/backend       # Trỏ về folder KHUÔN CHUNG backend
-
-    # Biến số quan trọng: Nạp file cấu hình riêng của dịch vụ Order vào khuôn
-    helm:
-      valueFiles:
-        - values.yaml              # File values mặc định trong khuôn (nếu cần)
-      # parameters:
-      #   - name: app.name           # Ví dụ ghi đè các tham số định danh dịch vụ
-      #     value: order
-      #   - name: image.repository
-      #     value: tthphat/yas-order
+    path: k8s/charts/order
 
   destination:
     server: 'https://kubernetes.default.svc' # Cụm K8s đích (in-cluster)
