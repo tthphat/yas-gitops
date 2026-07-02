@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: inventory
+  name: inventory-staging
   namespace: argocd
 spec:
   project: default
@@ -9,9 +9,12 @@ spec:
     repoURL: git@github.com:tthphat/yas-gitops.git
     targetRevision: main
     path: k8s/charts/inventory
+    helm:
+      valueFiles:
+        - values.staging.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: yas
+    namespace: staging
   syncPolicy:
     automated:
       prune: true

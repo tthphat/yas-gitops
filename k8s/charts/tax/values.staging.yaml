@@ -1,0 +1,12 @@
+backend:
+  image:
+    repository: thaithienphu/tax
+    tag: latest
+
+  nameOverride: tax
+  fullnameOverride: tax
+  databaseName: tax
+  ingress:
+    enabled: true
+    host: api.yas.local.com
+    path: /tax

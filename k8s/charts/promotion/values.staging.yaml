@@ -1,0 +1,10 @@
+backend:
+  image:
+    repository: thaithienphu/promotion
+    tag: latest
+
+  nameOverride: promotion
+  fullnameOverride: promotion
+  databaseName: promotion
+  ingress:
+    enabled: false

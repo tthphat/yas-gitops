@@ -1,17 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: yas-configuration
+  name: sampledata-staging
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: git@github.com:tthphat/yas-gitops.git
     targetRevision: main
-    path: k8s/charts/yas-configuration
+    path: k8s/charts/sampledata
+    helm:
+      valueFiles:
+        - values.staging.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: yas
+    namespace: staging
   syncPolicy:
     automated:
       prune: true

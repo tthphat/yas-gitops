@@ -1,21 +1,20 @@
-# App of Apps: app mẹ quản lý tất cả service con
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
+  name: storefront-ui-staging
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: git@github.com:tthphat/yas-gitops.git
     targetRevision: main
-    # Trỏ vào thư mục chứa các file Application YAML của từng service
-    path: k8s/argocd-apps
-    directory:
-      recurse: true
+    path: k8s/charts/storefront-ui
+    helm:
+      valueFiles:
+        - values.staging.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: staging
   syncPolicy:
     automated:
       prune: true
