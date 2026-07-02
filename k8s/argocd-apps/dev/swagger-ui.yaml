@@ -1,20 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: payment-paypal-staging
+  name: swagger-ui-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: git@github.com:tthphat/yas-gitops.git
     targetRevision: main
-    path: k8s/charts/payment-paypal
-    helm:
-      valueFiles:
-        - values.staging.yaml
+    path: k8s/charts/swagger-ui
   destination:
     server: https://kubernetes.default.svc
-    namespace: staging
+    namespace: dev
   syncPolicy:
     automated:
       prune: true
