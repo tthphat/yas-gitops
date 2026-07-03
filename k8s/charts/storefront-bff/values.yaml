@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/storefront-bff
-    tag: latest
+    tag: 1258602
 
   nameOverride: storefront-bff
   fullnameOverride: storefront-bff

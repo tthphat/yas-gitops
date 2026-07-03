@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/search
-    tag: latest
+    tag: 1258602
 
   nameOverride: search
   fullnameOverride: search

@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/order
-    tag: latest
+    tag: 1258602
 
   nameOverride: order
   fullnameOverride: order

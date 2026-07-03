@@ -1,7 +1,7 @@
 ui:
   image:
     repository: thaithienphu/backoffice
-    tag: latest
+    tag: 1258602
   nameOverride: backoffice-ui
   fullnameOverride: backoffice-ui
   ingress:
