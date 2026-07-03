@@ -8,5 +8,5 @@ backend:
   databaseName: tax
   ingress:
     enabled: true
-    host: api.yas.local.com
+    host: api.staging.yas.local.com
     path: /tax

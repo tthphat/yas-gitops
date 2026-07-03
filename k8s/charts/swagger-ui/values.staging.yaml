@@ -1,0 +1,5 @@
+ingress:
+  host: api.staging.yas.local.com
+  hosts:
+    - host: api.staging.yas.local.com
+apiBaseUrl: http://api.staging.yas.local.com

@@ -8,7 +8,7 @@ backend:
   databaseName: product
   ingress:
     enabled: true
-    host: api.yas.local.com
+    host: api.staging.yas.local.com
     path: /product
   extraVolumes:
     - name: product-application-config

@@ -8,7 +8,7 @@ backend:
   databaseName: customer
   ingress:
     enabled: true
-    host: api.yas.local.com
+    host: api.staging.yas.local.com
     path: /customer
   extraEnvFroms:
     - secretRef:

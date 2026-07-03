@@ -13,7 +13,7 @@ backend:
 
   ingress:
     enabled: true
-    host: storefront.yas.local.com
+    host: storefront.staging.yas.local.com
     path: /
 
   extraEnvs:
