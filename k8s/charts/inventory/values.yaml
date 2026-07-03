@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/inventory
-    tag: 1258602
+    tag: latest
 
   nameOverride: inventory
   fullnameOverride: inventory

@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/media
-    tag: 1258602
+    tag: latest
 
   nameOverride: media
   fullnameOverride: media

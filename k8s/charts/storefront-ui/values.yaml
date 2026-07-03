@@ -1,7 +1,7 @@
 ui:
   image:
     repository: thaithienphu/storefront
-    tag: 1258602
+    tag: latest
   nameOverride: storefront-ui
   fullnameOverride: storefront-ui
 #  extraVolumes:
