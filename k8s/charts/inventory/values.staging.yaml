@@ -6,6 +6,9 @@ backend:
   nameOverride: inventory
   fullnameOverride: inventory
   databaseName: inventory
+  extraEnvs:
+    - name: SPRING_PROFILES_ACTIVE
+      value: k8s
   ingress:
     enabled: true
     host: api.staging.yas.local.com

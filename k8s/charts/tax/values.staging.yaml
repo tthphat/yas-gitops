@@ -6,6 +6,9 @@ backend:
   nameOverride: tax
   fullnameOverride: tax
   databaseName: tax
+  extraEnvs:
+    - name: SPRING_PROFILES_ACTIVE
+      value: k8s
   ingress:
     enabled: true
     host: api.staging.yas.local.com

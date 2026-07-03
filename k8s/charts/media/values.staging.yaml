@@ -6,6 +6,9 @@ backend:
   nameOverride: media
   fullnameOverride: media
   databaseName: media
+  extraEnvs:
+    - name: SPRING_PROFILES_ACTIVE
+      value: k8s
   ingress:
     enabled: true
     host: api.staging.yas.local.com

@@ -6,6 +6,9 @@ backend:
   nameOverride: product
   fullnameOverride: product
   databaseName: product
+  extraEnvs:
+    - name: SPRING_PROFILES_ACTIVE
+      value: k8s
   ingress:
     enabled: true
     host: api.yas.local.com
