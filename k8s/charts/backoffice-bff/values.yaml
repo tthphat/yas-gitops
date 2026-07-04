@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/backoffice-bff
-    tag: latest
+    tag: 7c2bba4
 
   nameOverride: backoffice-bff
   fullnameOverride: backoffice-bff
