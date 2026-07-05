@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/search
-    tag: 7c2bba4
+    tag: 90d9ee6
 
   nameOverride: search
   fullnameOverride: search
