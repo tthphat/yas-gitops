@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/sampledata
-    tag: latest
+    tag: 7c2bba4
 
   nameOverride: sampledata
   fullnameOverride: sampledata

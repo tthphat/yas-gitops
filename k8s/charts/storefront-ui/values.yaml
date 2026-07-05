@@ -1,7 +1,7 @@
 ui:
   image:
     repository: thaithienphu/storefront
-    tag: latest
+    tag: 7c2bba4
   nameOverride: storefront-ui
   fullnameOverride: storefront-ui
 #  extraVolumes:
@@ -18,7 +18,7 @@ ui:
 #      subPath: .env.production
   extraEnvs:
     - name: API_BASE_PATH
-      value: http://storefront-bff.yas.svc.cluster.local/api
+      value: http://storefront-bff.dev.svc.cluster.local/api
   ingress:
     enabled: false
 
