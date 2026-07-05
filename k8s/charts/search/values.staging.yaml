@@ -9,13 +9,6 @@ backend:
   extraEnvs:
     - name: SPRING_PROFILES_ACTIVE
       value: k8s
-    #     # --- THÊM 4 DÒNG DƯỚI ĐÂY VÀO ĐÂY ---
-    # - name: SPRING_ELASTICSEARCH_URIS
-    #   value: "https://elasticsearch-es-http.elasticsearch:9200"
-    # - name: SPRING_ELASTICSEARCH_USERNAME
-    #   value: "elastic"
-    # - name: SPRING_ELASTICSEARCH_PASSWORD
-    #   value: evBF1lnbtUeDFMrXbbINnGKb
   ingress:
     enabled: true
     host: api.staging.yas.local.com
