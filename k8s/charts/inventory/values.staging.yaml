@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/inventory
-    tag: latest
+    tag: v1.0.1
 
   nameOverride: inventory
   fullnameOverride: inventory

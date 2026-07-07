@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/tax
-    tag: latest
+    tag: v1.0.1
 
   nameOverride: tax
   fullnameOverride: tax

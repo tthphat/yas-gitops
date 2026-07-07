@@ -1,7 +1,7 @@
 backend:
   image:
     repository: thaithienphu/customer
-    tag: latest
+    tag: v1.0.1
 
   nameOverride: customer
   fullnameOverride: customer
